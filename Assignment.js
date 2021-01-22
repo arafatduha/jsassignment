@@ -1,4 +1,7 @@
-// Repo 
+// https://arafatduha.github.io/jsassignment/
+
+
+//master branch
 
 //KilometerToMeter 
 function kilometerToMeter(kilometer){
@@ -71,14 +74,26 @@ console.log(totalHotelCost);
 
 //megaFriend 
 //
-var i=0;
-function megaFriend(name){
-    for(i=0; i<name.length(); i++){
-        console.log(name[i]);
+
+var friendsName = ['pocoX','samsu','kupa','Trump', 'Joebiden', 'whatislove'];
+var result = megaFriend(friendsName);
+console.log(result);
+
+
+//function here 
+
+function megaFriend(friendsName){
+
+    var name=friendsName[0].length;
+  
+    for(var i=0; i<friendsName.length; i++){
+      console.log(friendsName[i]);
+        if(friendsName[i].length>name){
+            name=friendsName[i];
+           
+        }
+       
     }
     return name;
 
 }
-
-var Array = megaFriend(['duha','samsu']);
-console.log(Array);
