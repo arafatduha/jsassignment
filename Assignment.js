@@ -75,7 +75,7 @@ console.log(totalHotelCost);
 //megaFriend 
 //
 
-var friendsName = ['pocoX','samsu','kupa','Trump', 'Joebiden', 'whatislove'];
+var friendsName = ['pocoX','samsu','kupa','Trump', 'new', 'Joebiden22', 'whatislove'];
 var result = megaFriend(friendsName);
 console.log(result);
 
@@ -84,11 +84,13 @@ console.log(result);
 
 function megaFriend(friendsName){
 
-    var name=friendsName[0].length;
+    var nameLength=friendsName[0].length;
+    var name=friendsName[0];
   
     for(var i=0; i<friendsName.length; i++){
-      console.log(friendsName[i]);
-        if(friendsName[i].length>name){
+     // console.log(friendsName[i]);
+        if(friendsName[i].length>nameLength){
+            nameLength=friendsName[i].length;
             name=friendsName[i];
            
         }
